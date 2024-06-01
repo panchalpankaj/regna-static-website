@@ -1,0 +1,37 @@
+.part {
+  width: 100%;
+}
+
+.part1 {
+  width: 50%;
+  float: left;
+}
+
+.part2 {
+  width: 50%;
+  float: left;
+}
+
+.main {
+  background-image: url("https://assets.hongkiat.com/uploads/nature-photography/autumn-poolside.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.main h1 {
+  position: absolute;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(222, 155, 68);
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.Human_evolution img {
+  max-width: 30%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}

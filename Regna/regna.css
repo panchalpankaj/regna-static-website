@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+
+.header {
+  transition: background-color 0.3s;
+  z-index: 10;
+  width: 100%;
+  background: transparent;
+  padding: 15px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.upbtn {
+  z-index: 3;
+  background: transparent;
+  position: fixed;
+  background-color: rgba(59, 242, 169, 0.9);
+  right: 10px;
+  bottom: 10px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.upbtnes {
+  cursor: pointer;
+}
+.logo {
+  width: 20%;
+  float: left;
+  color: white;
+  font-size: 25px;
+  padding-left: 80px;
+}
+
+.menu {
+  width: 80%;
+  text-align: center;
+  float: right;
+  padding-right: 55px;
+  font-size: 18px;
+}
+
+.menu ul {
+  float: right;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.menu ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* for hover Effect  */
+.menu ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  margin: auto;
+  display: block;
+  background: lightgreen;
+  transition: width 0.5s;
+}
+
+.menu ul li:hover::after {
+  width: 80%;
+}
+
+.facts {
+  background-color: rgb(247, 247, 247);
+  box-sizing: border-box;
+}
+
+#facts_title {
+  font-family: Poppins, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(17, 17, 17);
+  padding-top: 70px;
+}
+
+#facts_paragraph {
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 25px;
+  color: rgb(153, 153, 153);
+}
+
+#fact_number {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 55px;
+}
+
+.c1 span {
+  color: #2dc997;
+  font-size: 45px;
+}
+
+
+#pankaj {
+  color: #2dc997;
+}
+
+.menu ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 40px;
+  left: 0;
+  width: 200px;
+  padding: 0;
+  list-style: none;
+  z-index: 1000;
+}
+
+.menu ul li .dropdown-menu li {
+  position: relative;
+}
+
+.menu ul li .dropdown-menu li a {
+  padding: 15px;
+  color: rgb(75, 50, 50);
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.menu ul li .dropdown-menu li a:hover {
+  color: lightgreen;
+}
+
+.menu ul li:hover .dropdown-menu {
+  display: block;
+}
+
+.menu ul li .dropdown-menu li .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+.menu ul li .dropdown-menu li:hover .dropdown-menu {
+  display: block;
+}
+
+/* Ensure the menu styles are applied correctly */
+.menu ul {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.menu ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  margin: auto;
+  display: block;
+  background: lightgreen;
+  transition: width 0.5s;
+}
+
+.menu ul li:hover::after {
+  width: 80%;
+}
+
+.menu ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 100%;
+  left: 0;
+  width: 200px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul li .dropdown-menu li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  padding: 0;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu ul li:hover .dropdown-menu,
+.menu ul li .dropdown-menu li:hover .dropdown-menu {
+  display: block;
+}
+
+.menu ul li .dropdown-menu li {
+  position: relative;
+}
+
+footer {
+  background-color: rgb(52, 59, 64);
+  color: #f7f7f7;
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+}
+
+

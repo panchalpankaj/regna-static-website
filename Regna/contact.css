@@ -1,0 +1,85 @@
+.contact {
+  background-color: #f7f7f7;
+}
+
+.adr {
+  width: 40%;
+}
+
+.genus {
+  width: 80%;
+  float: right;
+  margin-right: 80px;
+}
+.adr_form {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  padding-left: 300px;
+}
+
+.icon-roun {
+  padding-left: 300px;
+  padding-top: 100px;
+  color: #2dc997;
+  font-size: larger;
+  padding: 10px;
+}
+
+.loges {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+  padding-left: 160px;
+}
+.loges i {
+  justify-content: space-between;
+  font-size: 24px;
+  color: #333;
+}
+.contact_form {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(234, 234, 234);
+}
+
+.inpfield {
+  padding: 10px;
+  width: 45%;
+  float: left;
+  display: grid;
+  gap: 10px;
+}
+
+.inpfield input,
+.inpfield textarea,
+.inpfield button {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+  float: right;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.inpfield button {
+  color: white;
+  background-color: rgb(45, 201, 151);
+  margin-left: 120px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 25%;
+  float: right;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.inpfield button:hover {
+  background-color: rgb(51, 228, 172);
+  cursor: pointer;
+}

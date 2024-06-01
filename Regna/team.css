@@ -1,0 +1,53 @@
+.team_img {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.t_i {
+  background-repeat: no-repeat;
+  height: 100px;
+  padding: 0px;
+}
+
+.t_i img {
+  background-repeat: no-repeat;
+  height: 286px;
+  width: 310px;
+  padding: 15px;
+  justify-content: space-evenly;
+  background-size: cover;
+}
+
+.t_i1 {
+  color: rgb(17, 17, 17);
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.t_ip1 {
+  color: rgb(17, 17, 17);
+  text-align: center;
+  font-style: italic;
+  display: block;
+  font-size: 15px;
+}
+
+.loge {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.loge i {
+  justify-content: space-between;
+  font-size: 24px;
+  color: #333;
+}
+
+.team {
+  margin-bottom: 300px;
+}

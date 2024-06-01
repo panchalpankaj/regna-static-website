@@ -1,0 +1,65 @@
+.about {
+    width: 100%;
+    margin-bottom: 700px;
+    padding-top: 120px;
+    
+  }
+  
+  .about1 {
+    width: 50%;
+    float: left;
+    padding-left: 120px;
+  }
+  
+  .about2 {
+    width: 50%;
+    float: right;
+    background-size: cover;
+  }
+  
+  .about2 img {
+    height: 500px;
+    margin-bottom: 100px;
+  }
+  
+  #About_us_heading {
+    color: #333;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  #menus_of_About {
+    padding-top: 50px;
+  }
+  .menus {
+    width: 80%;
+    float: right;
+    margin-right: 80px;
+  }
+  .beg {
+    width: 100%;
+  
+    padding-bottom: 50px;
+  }
+  .beg2 {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .byscop {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .icon-rounded {
+    border: 2px solid #2dc997;
+    border-radius: 50%;
+    padding: 10px;
+    /* display: inline-block; */
+  }
+
+
+  

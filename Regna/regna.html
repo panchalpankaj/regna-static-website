@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regna</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="regna.css" />
+    <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="service.css" />
+    <link rel="stylesheet" href="call_to_action.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="team.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="mediaquery.css"/>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const header = document.querySelector('.header');
+        const upButton = document.querySelector('.upbtnes');
+        const scrollOffset = 50;
+    
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > scrollOffset) {
+            header.classList.add('scrolled');
+            upButton.classList.add('visible');
+          } else {
+            header.classList.remove('scrolled');
+            upButton.classList.remove('visible');
+          }
+        });
+    
+        upButton.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="header"> 
+      <div class="logo">REGNA</div>
+ <nav class="menu">
+  <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#service">SERVICE</a></li>
+    <li><a href="#portfolio">PORTFOLIO</a></li>
+    <li><a href="#team">TEAM</a></li>
+    <li>
+      <a href="#team">DROPDOWN</a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Submenu 1</a></li>
+        <li>
+          <a href="#">Submenu 2</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Deep Submenu 1</a></li>
+            <li><a href="#">Deep Submenu 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Submenu 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+    </div>
+
+    <a href="#" class="upbtnes">
+    <span class="upbtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </span></a>
+
+    <div class="main">
+      <div class="homepage ">
+        <img
+          src="/image/homepage_background.jpg"
+          alt="unplace"
+        />
+        <div class="banner-txt animate__animated animate__zoomIn">
+          <h1>WELCOME TO REGNA </h1>
+          <p>We are team of talented designers making websites with Bootstrap</p>
+          <div class="home_btn">
+          <button type="submit"><p>Get Started</p></button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="about">
+        <div id="about">
+          <div class="about1 animate__animated animate__slideInUp">
+            <div id="About_us_heading">Few Word About Us!</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsum
+            sunt exercitationem hic error! Dolorum quidem ? Ipsam, Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Unde placeat sit
+            tempori epturi numquam atque quae ipsum accusantium laudantium
+            deleniti repudiandae. Dolores, quidem nulla?
+
+            <div id="menus_of_About">
+              <div class="beg">
+                <i class="fa-solid fa-briefcase icon-rounded"> </i>
+                <div class="menus">
+                  <h4>EIUSMOD TEMPOR</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Illo, enim?
+                  </p>
+                </div>
+              </div>
+
+              <div class="beg2">
+                <i class="fa-solid fa-credit-card icon-rounded"></i>
+                <div class="menus">
+                  <h4>MAGNI DOLORES</h4>
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+              </div>
+              <div class="byscop">
+                <i class="fa-brands fa-slack icon-rounded"></i>
+                <div class="menus">
+                  <h4>MAGNI DOLORES</h4>
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about2 animate__animated animate__slideInRight">
+            <img
+              src="https://img.freepik.com/premium-photo/young-promising-business-team-girls-boys-business-image-with-laptops-their-hands_115086-1320.jpg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="facts animate__animated animate__zoomIn">
+        <div id="facts_title">FACTS</div>
+        <p id="facts_paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing.
+        </p>
+        <div id="fact_number">
+          <div class="c1 animate__animated animate__bounceIn">
+            <span>232</span>
+            <p>Client</p>
+          </div>
+          <div class="c1 animate__animated animate__bounceIn">
+            <span>534</span>
+            <p>Project</p>
+          </div>
+          <div class="c1 animate__animated animate__bounceIn">
+            <span>298</span>
+            <p>House of Support</p>
+          </div>
+          <div class="c1 animate__animated animate__bounceIn">
+            <span>314</span>
+            <p>Hard Workers</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="service">
+        <div id="service">
+          <div class="service_title">SERVICE</div>
+          <p id="facts_paragraph">
+            sit amet consectetpisicing elit. Quaerat fugiat esse magni debitis,
+            harum autem!
+          </p>
+          <div class="service_box">
+           
+            <div class="box1">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-bag-shopping icon"></i>
+              </div>
+              <h3 id="box1_h3">Lorem ispam</h3>
+              <p id="box1_p">
+                Lorem ipsum dolor sisit amet consectetur adipisicing elit. Doloremque quasi alias nesciunt velit ipsam amet!
+              </p>
+            </div>
+
+            
+
+            <div class="box1">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-check-to-slot icon"></i>
+              </div>
+              <h3 id="box1_h3">DOLOR SITEMA</h3>
+              <p id="box1_p">
+                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo  tarad limino ata
+              </p>
+            </div>
+            <div class="box1">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-chart-simple icon"></i>
+              </div>
+              <h3 id="box1_h3">SED UT PERSPICIATIS</h3>
+              <p id="box1_p">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur
+              </p>
+            </div>
+            <div class="box1">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-camera-retro icon"></i>
+              </div>
+              <h3 id="box1_h3">MAGNI DOLORES</h3>
+              <p id="box1_p">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum
+              </p>
+            </div>
+            <div class="box1">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-sun icon"></i>
+              </div>
+              <h3 id="box1_h3">NEMO ENIM</h3>
+              <p id="box1_p">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti 
+              </p>
+            </div>
+            <div class="box1">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-calendar-days icon"></i>
+              </div>
+              <h3 id="box1_h3">EIUSMOD TEMPOR</h3>
+              <p id="box1_p">
+                Et harum quidem rerum facilis est et expedita distinctio. Nam
+                libero tempore, cum soluta nobis est eligendi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="call_to_Action">
+        <img src="/image/call-to-action-bg.jpg" alt="Background Image">
+        <div class="textses">
+          <div class="txty">
+            <h2>Call To Action</h2>
+            <p>Duis aute irure dolor in repreheccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="btnes">
+            <button type="button">Call To Action</button>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="portfolio">
+        <div id="portfolio">
+          <div class="service_title">PORTFOLIO</div>
+          <div id="facts_paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+            quis?
+          </div>
+          <div class="portfolio_menu">
+            <div class="port">All</div>
+            <div class="port">App</div>
+            <div class="port">Card</div>
+            <div class="port">Web</div>
+          </div>
+
+          <div class="port_img">
+            <div class="p_i">
+              <img
+                src="/image/colors.jpg"
+              />
+            </div>
+            <div class="p_i">
+              <img
+                src="/image/flower.jpg"
+              />
+            </div>
+            <div class="p_i">
+              <img
+                src="/image/flower2.jpg"
+              />
+            </div>
+            <div class="p_i">
+              <img
+                src="/image/homepage_background.jpg"
+              />
+            </div>
+            <div class="p_i">
+              <img
+                src="/image/moon.jpg"
+              />
+            </div>
+            <div class="p_i">
+              <img
+                src="/image/moon_sky.jpg"
+              />
+            </div>
+            <div class="p_i">
+              <img
+                src="/image/river.jpg"
+              />
+            </div>
+            <div class="p_i">
+              <img
+                src="/image/wet.jpeg"
+              />
+            </div>
+            <div class="p_i">
+              <img
+                src="/image/flower.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team">
+        <div id="team">
+          <div class="service_title">TEAM</div>
+          <div id="facts_paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+            quis?
+          </div>
+          <div class="team_img">
+            <div class="t_i">
+              <img
+                src="https://klehr.com/naghoods/2023/11/Blank_1000px.jpg"
+              />
+              <div class="t_i1">Walton white</div>
+              <div class="t_ip1">Lorem, ipsum dolor.</div>
+              <div class="loge">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+            <div class="t_i">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ZOfDlERFesQI6VLCsNFzw5Ki2V4LfQEz3g&s"
+              />
+              <div class="t_i1">Larry page</div>
+              <div class="t_ip1">sum dolo Lorem, ipsum dolor. r.</div>
+              <div class="loge">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+            <div class="t_i">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYTIbtkNsXrj3C1e2z8gCdQCnGgtILgqKAMg&s"
+              />
+              <div class="t_i1">Jonsone klay</div>
+              <div class="t_ip1">Lorem, ipsum. psum dolor.</div>
+              <div class="loge">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+            <div class="t_i">
+              <img
+                src="https://i.pinimg.com/474x/49/74/0f/49740fef6224d734de954f254085f332.jpg"
+              />
+              <div class="t_i1">Lotus atlas</div>
+              <div class="t_ip1">orm, ipsum dolor.</div>
+              <div class="loge">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div id="contact">
+          <div class="service_title">CONTACT</div>
+          <div id="facts_paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+            quis?
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.0132135072354!2d72.55543447509461!3d23.11242837911087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83cce4c5f375%3A0x7a5b4259490cc0b7!2sARISE%20ATLANTIS!5e1!3m2!1sen!2sin!4v1716887623204!5m2!1sen!2sin"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <div class="contact_form">
+            <div class="adr">
+              <div class="adr_form">
+                <i class="fa-solid fa-location-dot icon-roun"></i>
+                <div class="mess_form">
+                 
+                  <p>
+                    A108 Adam Street<br/>
+                    New York, NY 535022
+                  </p>
+                </div>
+              </div>
+
+              <div class="adr_form">
+                <i class="fa-solid fa-message icon-roun"></i>
+                <div class="mess_form">
+                  
+                  <p>
+                    info@example.com
+                  </p>
+                </div>
+              </div>
+              <div class="adr_form">
+                <i class="fa-solid fa-phone icon-roun"></i>
+                <div class="mess_form">
+                  
+                  <p>
+                    +1 5589 55488 55s
+                  </p>
+                </div>
+              </div>
+              <div class="loges">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+            </div>
+            
+            <div class="inpfield">
+                <input type="text" placeholder="Your Name"></input>
+                <input type="text" placeholder="Your Email"></input>
+                <input type="text" placeholder="Subject"></input>
+                <textarea placeholder="Message" rows="8"></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      © Copyright Regna. All Rights Reserved<br>
+      <span>Designed by <span id="pankaj">Pankaj</span></span>
+    </footer>
+
+  </body>
+</html>
+
+
+
